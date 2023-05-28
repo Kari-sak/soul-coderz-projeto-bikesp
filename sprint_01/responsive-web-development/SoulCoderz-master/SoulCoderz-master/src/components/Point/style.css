@@ -1,0 +1,163 @@
+.point {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 1px solid #555555;
+}
+
+.address {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: 1 1 0%;
+}
+
+.address p {
+  color: #1E1E1E;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.avaiableCount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #555555;
+  border-left: 1px solid #555555;
+  padding: 5px 24px;
+}
+
+.avaiableCount h5 {
+  color: #1E1E1E;
+}
+
+.avaiableCount p {
+  color: #555555;
+}
+
+.radios {
+  display: flex;
+  flex-direction: column;
+}
+
+.Size {
+  padding: 5px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Size h5 {
+  color: #1E1E1E;
+}
+
+.Size label {
+  display: flex;
+  gap: 4px;
+  color: #555555;
+}
+
+.button_bike_add {
+  border-right: 1px solid #555555;
+  padding: 0 24px;
+}
+
+.add_bike {
+  width: 169px;
+  height: 40px;
+  background: #f3eb55;
+  color: #1E1E1E;
+  margin: 29px 0;
+  border-radius: 30px;
+  font-weight: 600;
+  line-height: 24px;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_bike_edit {
+  display: flex;
+  gap: 24px;
+}
+
+.edit_bike {
+  background: #f3eb55;
+  color: #1E1E1E;
+  margin: 29px 0;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  line-height: 18px;
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_bike_remove {
+  padding-right: 24px;
+}
+
+.remove_bike {
+  background: #CF2D2D;
+  color: #FCFFFC;
+  margin: 29px 0;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  line-height: 18px;
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_icons {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1280px) {
+  .point {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .actions {
+    justify-content: center;
+  }
+  .avaiableCount {
+    border-left: none;
+  }
+}
+
+@media screen and (max-width: 958px) {
+  .actions {
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid #555555;
+    margin-top: 16px;
+    width: 100%;
+  }
+  .avaiableCount, .button_bike_add {
+    border-right: none;
+  }
+  .Size {
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    width: 100%;
+  }
+}

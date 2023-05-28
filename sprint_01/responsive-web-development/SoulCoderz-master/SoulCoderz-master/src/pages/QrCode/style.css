@@ -1,0 +1,145 @@
+.qrcode_title {
+  text-align: center;
+  color: #1E1E1E;
+  padding: 75px 0 50px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.qrcode_phases {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 45px;
+  text-align: center;
+  color: #555555;
+  margin-top: 25px;
+}
+
+.qrcode_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.ImgQrcode {
+  width: 390px;
+  height: 390px;
+  border-radius: 100%;
+}
+
+.main_code {
+  flex-direction: row;
+  background: #fff;
+  width: 432px;
+  height: 435px;
+  padding: 25px 30px;
+  margin-top: 35px;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+  border-right: #0033B8 2px solid;
+  border-left: #0033B8 2px solid;
+
+}
+
+.main_code form .title_code {
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #1E1E1E;
+}
+
+.main_code form .qrcode_box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+  padding: 12px 2px;
+}
+
+.main_code form .qrcode_box input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+
+.main_code form .underline::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #1E1E1E;
+  left: 0;
+  bottom: 0;
+}
+
+.main_code form .underline::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #0033B8;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+
+.main_code form .qrcode_box input:focus~.underline::after,
+.main_code form .qrcode_box input:valid~.underline::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.button_qrcode {
+  display: inline-block;
+  width: 100%;
+  background: #f3eb55;
+  color: #1E1E1E;
+  padding: 8px 30px;
+  margin: 29px 0;
+  border-radius: 30px;
+  font-weight: 600;
+  line-height: 24px;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+
+.paragraph_qrcode {
+  font-weight: 400;
+  line-height: 21px;
+  padding-top: 15px;
+  color: #555555;
+  text-align: center;
+}
+
+input#file_input {
+  display: none;
+}
+
+input#file_input+label {
+  background-color: #0033B8;
+  padding: 8px;
+  color: white;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.camera_icon {
+  width: 25px;
+  height: 22px;
+}
